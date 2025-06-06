@@ -31,7 +31,8 @@ Users should be able to:
 
 ### Screenshot
 
-preview.jpg
+![preview](https://github.com/user-attachments/assets/05aacc86-c609-4a02-8b3b-0f00d2da4947)
+
 
 ### Links
 
