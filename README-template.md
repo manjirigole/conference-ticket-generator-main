@@ -35,8 +35,8 @@ preview.jpg
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/conference-ticket-generator-main-uVfVG8kjyU
+- Live Site URL: https://manjirigole.github.io/conference-ticket-generator-main/
 
 ## My process
 
@@ -50,4 +50,4 @@ preview.jpg
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - https://www.frontendmentor.io/profile/manjirigole
