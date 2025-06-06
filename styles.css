@@ -1,0 +1,315 @@
+body {
+  font-family: "Inconsolata", sans-serif;
+  background-color: hsl(248, 70%, 10%);
+  background-image: url("/assets/images/pattern-lines.svg"),
+    url("/assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+    url("/assets/images/pattern-squiggly-line-top.svg"),
+    url("/assets/images/pattern-circle.svg"),
+    url("/assets/images/pattern-circle.svg"),
+    url("/assets/images/background-desktop.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: center, bottom left, top right, top left, center right,
+    center;
+  min-height: 100vh;
+  background-size: cover, 800px auto, 500px auto, 200px auto, 200px auto, cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0;
+}
+.logo-full {
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 40px;
+}
+.container h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 3px;
+  margin-bottom: 0;
+}
+.container p {
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  color: hsl(0, 0%, 100%);
+}
+.upload-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.upload-div label {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.upload-box {
+  width: 400px;
+  height: 140px;
+  border: 2px dashed hsl(252, 6%, 83%, 50%);
+  border-radius: 12px;
+  background-color: hsl(245, 15%, 58%, 5%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upload-box input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.upload-instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  padding-top: 20px;
+}
+.upload-instructions img {
+  background-color: hsl(252, 6%, 83%, 20%);
+  border: 2px solid hsl(252, 6%, 83%, 50%);
+  border-radius: 5px;
+  padding: 5px;
+}
+.upload-instructions p {
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: hsl(0, 0%, 100%, 50%);
+}
+.preview-mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+.avatar-preview {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.btn-grp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-remove,
+.btn-change {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 15%, 58%, 30%);
+  height: 30px;
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.fname,
+.email,
+.username {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.fname-div,
+.email-div,
+.username-div {
+  margin: 20px;
+}
+.fname-input,
+.email-input,
+.username-input {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: hsl(252, 6%, 83%, 10%);
+  border: 2px solid hsl(245, 15%, 58%);
+  color: hsl(0, 0%, 100%);
+  padding-left: 10px;
+  outline: none;
+}
+.upload-div:focus,
+.fname-input:focus,
+.email-input:focus,
+.username-input:focus {
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px hsl(0, 0%, 100%, 50%), 0 0 0 2px hsl(0, 0%, 100%);
+  outline: none;
+}
+
+.email-input::placeholder,
+.username-input::placeholder {
+  padding-left: 10px;
+  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-family: "Inconsolata", sans-serif;
+}
+.upload-box .error-msg {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  display: none;
+}
+.error-msg {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  display: none;
+}
+.error-msg p,
+img {
+  margin: 0;
+  color: hsl(7, 71%, 60%);
+}
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.btn {
+  color: hsl(248, 70%, 10%);
+  background-color: hsl(7, 88%, 67%);
+  font-size: 20px;
+  font-weight: 700;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Inconsolata", sans-serif;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:focus {
+  border: 2px solid hsl(0, 0%, 100%);
+}
+.ticket-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.ticket {
+  position: relative;
+  width: 500px;
+  height: auto;
+}
+
+.pattern-ticket {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ticket-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Inconsolata", monospace;
+}
+
+.ticket-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticket-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #222;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.github-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ticket-name {
+  margin-bottom: 0;
+}
+.ticket-date {
+  margin-top: 0;
+  padding-left: 40px;
+}
+.ticket-p {
+  width: 400px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#ticket-email {
+  color: hsl(7, 71%, 60%);
+}
+#ticket-name {
+  color: transparent;
+  background: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  background-clip: text;
+}
+.ticket-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ticket-right p {
+  writing-mode: vertical-lr;
+  font-size: 20px;
+  color: hsl(245, 15%, 58%);
+  font-weight: 600;
+}
